@@ -8,25 +8,34 @@ which most programs don't support.   However, browsers typically do support
 gamma, which affords the ability to make an image appear differently based
 on where it is viewed.
 
-## Example
-
-To run:
-
+## Instructions
+### GO Version
 ```bash
 go run gammux.go -full ./fine.jpg -thumbnail ./notfine.jpg  -dest merged.png
 ```
 
-or if you want to use the **Python2** version:
-
+### Python2 Version
+First install the pillow library for Python2 using pip.
+```bash
+py -2 -m pip install pillow
 ```
+To run it:
+```bash
 py -2 gammux.py fine.jpg notfine.jpg merged.png
 ```
 
-Make sure you have the **pillow library** installed. If not, install it with pip:
+### Python3 Version
+First install the pillow library for Python3 using pip.
+```bash
+py -3 -m pip install pillow
+```
+To run it:
+```bash
+py -3 gammux.py fine.jpg notfine.jpg merged.png
+```
 
-```
-py -2 -m pip install pillow
-```
+
+# How does it work?
 
 The tool takes 2 images as input:
 
